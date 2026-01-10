@@ -1,82 +1,363 @@
-/* General Styling */
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+
+    /*========== Colors (YOUR PALETTE) ==========*/
+    --black-color: #222831;
+    --body-color: #222831;
+    --container-color: #222831;
+
+    --gray-color: #393E46;
+
+    --first-color: #00ADB5;
+    --first-color-alt: #00979e;
+
+    --white-color: #EEEEEE;
+
+    /*========== Font and typography ==========*/
+    --body-font: "Unbounded", sans-serif;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    /*========== Font weight ==========*/
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+    :root {
+        --bigger-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
     padding: 0;
-    color: #333;
+    margin: 0;
 }
 
-/* Popup Styling */
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 10;
+html {
+    scroll-behavior: smooth;
 }
 
-.popup-content {
-    background: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+body,
+button,
+input,
+textarea {
+    font: var(--font-light) var(--normal-font-size) var(--body-font);
 }
 
-.popup-content h2 {
-    margin-bottom: 20px;
-    font-size: 22px;
+body {
+    background-color: var(--body-color);
+    color: var(--white-color);
 }
 
-.popup-content button {
-    margin: 8px;
-    padding: 10px 20px;
+button {
+    outline: none;
     border: none;
-    border-radius: 6px;
-    background: #4e54c8;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-.popup-content button:hover {
-    background: #6a6ff3;
-}
-
-/* Portfolio Sections */
-.portfolio-section {
-    display: none;
-    padding: 40px;
-    max-width: 800px;
-    margin: 60px auto;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.6s ease-in;
-}
-
-.portfolio-section h1 {
-    color: #4e54c8;
+h1,
+h2,
+h3,
+h4 {
+    font-weight: var(--font-semi-bold);
 }
 
 ul {
-    list-style: square;
+    list-style: none;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 1120px;
+    padding-inline: 1.5rem;
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section__title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: 1.5rem;
+}
+
+.main {
+    overflow: hidden;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    transition: box-shadow .4s;
+    padding-top: 2rem;
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+    transition: color .4s;
+}
+
+.nav__logo:hover {
+    color: var(--first-color);
+}
+
+.nav__toggle,
+.nav__close {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: rgba(34, 40, 49, 0.9);
+        width: 100%;
+        padding-block: 4rem;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        transition: top .4s;
+    }
+}
+
+.nav__list {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+}
+
+.nav__link {
+    position: relative;
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+    transition: color .4s;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.nav__link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--first-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width .4s;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.nav__link:hover::after {
+    width: 90%;
+}
+
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+/* Show menu */
+.show-menu {
+    top: 0;
+}
+
+/*=============== HOME ===============*/
+.home__container {
+    row-gap: 4rem;
+    padding-block: 2.5rem 2rem;
+}
+
+.home__content {
+    position: relative;
+    justify-self: center;
+}
+
+.home__image {
+    width: 240px;
+    height: 240px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 5px solid var(--first-color);
+    box-shadow: 0 8px 32px rgba(0, 173, 181, 0.3);
+}
+
+.home__img {
+    width: 200px;
+    filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.2));
+}
+
+.home__social {
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    bottom: 0;
+    display: grid;
+    align-content: center;
+    row-gap: 1.5rem;
+}
+
+.home__link {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    transition: .4s, color .4s;
+}
+
+.home__link:hover {
+    transform: translateY(-.25rem);
+    color: var(--first-color);
+}
+
+.home__data {
+    text-align: center;
+    row-gap: 1rem;
+}
+
+.home__subtitle span {
+    color: var(--first-color);
+}
+
+.home__title {
+    font-size: var(--bigger-font-size);
+    color: var(--first-color);
+}
+
+.home__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--first-color);
+    color: var(--black-color);
+    font-weight: var(--font-medium);
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    transition: box-shadow .4s color .4s;
+}
+
+.button:hover {
+    box-shadow: 0 8px 24px rgba(0, 173, 181, 0.35);
+}
+
+.button__ghost {
+    background-color: var(--body-color);
+    color: var(--white-color);
+    border: 2px solid var(--first-color);
+}
+
+.button__ghost:hover {
+    color: var(--first-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 320px) {
+    .container {
+        margin-inline: 1rem;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .home__image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home__img {
+        width: 170px;
+    }
+}
+
+/* For medium devices */
+
+
+/* For large devices (actually mobile/tablet max-width) */
+@media screen and (max-width: 1150px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1rem);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        row-gap: 2.5rem;
     }
 }

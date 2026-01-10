@@ -2,61 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anirban Banerjee | Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Responsive portfolio website Kai - Bedimcode</title>
 </head>
+
 <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">AB</a>
 
-    <!-- Popup Section -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <h2>Which side do you want to explore?</h2>
-            <button onclick="showPortfolio('frontend')">Frontend</button>
-            <button onclick="showPortfolio('backend')">Backend</button>
-            <button onclick="showPortfolio('fullstack')">Full Stack</button>
-        </div>
-    </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="nav__link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link">contacts</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
 
-    <!-- Frontend Section -->
-    <section id="frontend" class="portfolio-section">
-        <h1>Frontend Developer</h1>
-        <p>💻 Skills: HTML, CSS, JavaScript, Bootstrap</p>
-        <h3>Projects:</h3>
-        <ul>
-            <li>Netflix Clone (HTML, CSS)</li>
-            <li>Landing Page (Bootstrap)</li>
-            <li>Portfolio Website</li>
-        </ul>
-    </section>
+                </div>
 
-    <!-- Backend Section -->
-    <section id="backend" class="portfolio-section">
-        <h1>Backend Developer</h1>
-        <p>🧠 Skills: Node.js, Express, MySQL, MongoDB</p>
-        <h3>Projects:</h3>
-        <ul>
-            <li>API Management System</li>
-            <li>Login Authentication App</li>
-            <li>Data Dashboard</li>
-        </ul>
-    </section>
+            </div>
 
-    <!-- Full Stack Section -->
-    <section id="fullstack" class="portfolio-section">
-        <h1>Full Stack Developer</h1>
-        <p>🚀 Skills: HTML, CSS, JavaScript, Node.js, React, MongoDB</p>
-        <h3>Projects:</h3>
-        <ul>
-            <li>Student Course Management System</li>
-            <li>E-commerce Platform</li>
-            <li>Blog Application</li>
-        </ul>
-    </section>
+            <!-- Toggle menu -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
 
-    <script src="script.js"></script>
+        </nav>
+
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__image">
+                        <img src="/images/IMG_20251001_235337.jpg" alt="image" class="home__img">
+                    </div>
+                    <div class="home__social">
+                        <a href="" target="_blank" class="home__link">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="home__link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+
+                        <a href="" target="_blank" class="home__link">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+
+
+                    </div>
+
+                </div>
+                <div class="home__data grid">
+                    <p class="home__subtitle">
+                        <!-- js file -->
+                        Hi, I'm a <span id="home__typed"></span>
+                    </p>
+                    <h1 class="home__title">Anirban Banerjee</h1>
+                    <p class="home__description">
+                        Frontend Developer | MERN Stack Learner | Passionate about building responsive web
+                        experiences.Exploring full-stack
+                    </p>
+                    <div class="home__buttons">
+                        <a href="/images/Anirban_CV.pdf" class="button" download="" target="_blank">Download CV</a>
+                        <a href="#projects" class="button button__ghost">Projects</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+
+        </section>
+
+        <!--==================== RESUME ====================-->
+        <section class="resume section" id="resume">
+
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+    <!--=============== TYPED JS ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="/js/link.js"></script>
 </body>
 
 </html>
