@@ -21,7 +21,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">AB</a>
+            <a href="#" class="nav__logo" data-fullname="Anirban Banerjee">AB</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -48,6 +48,11 @@
 
             </div>
 
+            <!-- Theme toggle button -->
+            <div class="nav__theme" id="theme-button">
+                <i class="ri-moon-line"></i>
+            </div>
+
             <!-- Toggle menu -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-line"></i>
@@ -62,20 +67,21 @@
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
-                <div class="home__content">
+                <div class="home__content" data-reveal>
                     <div class="home__image">
                         <img src="images/IMG_20251001_235337.jpg" alt="image" class="home__img">
                     </div>
                     <div class="home__social">
-                        <a href="" target="_blank" class="home__link">
+                        <a href="https://www.linkedin.com/in/anirban-banerjee-7a131224a/" target="_blank"
+                            class="home__link">
                             <i class="ri-linkedin-box-fill"></i>
                         </a>
 
-                        <a href="" target="_blank" class="home__link">
+                        <a href="https://github.com/AnirbanBanerjee123" target="_blank" class="home__link">
                             <i class="ri-github-fill"></i>
                         </a>
 
-                        <a href="" target="_blank" class="home__link">
+                        <a href="https://twitter.com/AnirbanBanerje123" target="_blank" class="home__link">
                             <i class="ri-twitter-x-fill"></i>
                         </a>
 
@@ -83,7 +89,7 @@
                     </div>
 
                 </div>
-                <div class="home__data grid">
+                <div class="home__data grid" data-reveal>
                     <p class="home__subtitle">
                         <!-- js file -->
                         Hi, I'm a <span id="home__typed"></span>
@@ -94,7 +100,8 @@
                         experiences.Exploring full-stack
                     </p>
                     <div class="home__buttons">
-                        <a href="/images/Anirban_CV.pdf" class="button" download="" target="_blank">Download CV</a>
+                        <a href="https://drive.google.com/file/d/11WiaFFCgNRlfZISxaMtXWeMPzk4N5vYp/view?usp=sharing"
+                            class="button" download="" target="_blank">Download CV</a>
                         <a href="#projects" class="button button__ghost">Projects</a>
                     </div>
 
@@ -105,32 +112,390 @@
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__image" data-reveal>
+                    <img src="images/hero-img.jpg" alt="about-image" class="about__img">
+                </div>
+                <div class="about__content" data-reveal>
+                    <div class="about__data">
+                        <h2 class="section__title">About Me</h2>
+                        <p class="about__description">
+                            I'm Anirban Banerjee, a frontend-focused developer transitioning into full backend and
+                            full-stack development.
 
+                            <!-- I started with frontend technologies, building interfaces using HTML, CSS, JavaScript, and
+                            React, and learning how users
+                            interact with real applications. Over time, I realized that UI without solid logic is
+                            limited — so I'm now shifting my
+                            focus toward backend development, APIs, and databases. -->
+                        </p>
+                        <a href="#contact" class="button button__ghost">Contact Me</a>
+                    </div>
+                    <div class="about__skills">
+                        <h3 class="about__subtitle">
+                            <i class="ri-bookmark-3-fill"></i>
+                            <span>Skills</span>
+                        </h3>
+
+                        <ul class="about__items">
+                            <li class="about__item">HTML</li>
+                            <li class="about__item">CSS</li>
+                            <li class="about__item">JavaScript</li>
+                            <li class="about__item">React</li>
+                            <li class="about__item">BOOTSTRAP</li>
+                            <li class="about__item">Git</li>
+                            <li class="about__item">github</li>
+                            <!-- <li class="about__item"></li>
+                            <li class="about__item"></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== PROJECTS ====================-->
         <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
 
+            <div class="projects__container container grid">
+                <!-- Project Card 1 -->
+                <article class="projects__card" data-reveal>
+                    <div class="projects__image">
+                        <img src="images/creation_2198315180.png" alt="project" class="projects__img">
+                        <div class="projects__overlay">
+                            <div class="projects__content">
+                                <h3 class="projects__title">Portfolio Website</h3>
+                                <p class="projects__description">A responsive personal portfolio showcasing projects and
+                                    skills</p>
+                                <div class="projects__tags">
+                                    <span class="projects__tag">HTML</span>
+                                    <span class="projects__tag">CSS</span>
+                                    <span class="projects__tag">JavaScript</span>
+                                </div>
+                                <div class="projects__buttons">
+                                    <a href="#" class="projects__button" target="_blank">
+                                        <i class="ri-eye-line"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/AEVILOP/portfolio" class="projects__button"
+                                        target="_blank">
+                                        <i class="ri-github-line"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="projects__card" data-reveal>
+                    <div class="projects__image">
+                        <img src="images/creation_2198312881.png" alt="project" class="projects__img">
+                        <div class="projects__overlay">
+                            <div class="projects__content">
+                                <h3 class="projects__title">netflix landing page</h3>
+                                <p class="projects__description">Landing page clone for Netflix</p>
+                                <div class="projects__tags">
+                                    <span class="projects__tag">HTML</span>
+                                    <span class="projects__tag">CSS</span>
+
+                                </div>
+                                <div class="projects__buttons">
+                                    <a href="https://my-netflix-clone.netlify.app/" class="projects__button"
+                                        target="_blank">
+                                        <i class="ri-eye-line"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/AEVILOP/my-netflix-clone" class="projects__button"
+                                        target="_blank">
+                                        <i class="ri-github-line"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="projects__card" data-reveal>
+                    <div class="projects__image">
+                        <img src="images/creation_2198316328.png" alt="project" class="projects__img">
+                        <div class="projects__overlay">
+                            <div class="projects__content">
+                                <h3 class="projects__title">Spider Man - Figma file</h3>
+                                <p class="projects__description">Landing page for Spider Man</p>
+                                <div class="projects__tags">
+                                    <span class="projects__tag">HTML</span>
+                                    <span class="projects__tag">CSS</span>
+                                    <span class="projects__tag">figma</span>
+                                </div>
+                                <div class="projects__buttons">
+                                    <a href="https://aevilop.github.io/spiderman-landing-page/" class="projects__button"
+                                        target="_blank">
+                                        <i class="ri-eye-line"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/AEVILOP/spiderman-landing-page" class="projects__button"
+                                        target="_blank">
+                                        <i class="ri-github-line"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 -->
+                <article class="projects__card" data-reveal>
+                    <div class="projects__image">
+                        <img src="images/creation_2198306628.png" alt="project" class="projects__img">
+                        <div class="projects__overlay">
+                            <div class="projects__content">
+                                <h3 class="projects__title">Fossil Tune</h3>
+                                <p class="projects__description">A web music player</p>
+                                <div class="projects__tags">
+                                    <span class="projects__tag">HTML</span>
+                                    <span class="projects__tag">CSS</span>
+                                    <span class="projects__tag">JavaScript</span>
+                                </div>
+                                <div class="projects__buttons">
+                                    <a href="https://fossil-tune.netlify.app/" class="projects__button" target="_blank">
+                                        <i class="ri-eye-line"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/AEVILOP/Fossil-Tune" class="projects__button"
+                                        target="_blank">
+                                        <i class="ri-github-line"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!--==================== RESUME ====================-->
         <section class="resume section" id="resume">
+            <h2 class="section__title">Resume</h2>
 
+            <div class="resume__container container">
+                <!-- Resume Header -->
+                <div class="resume__header" data-reveal>
+                    <h3 class="resume__name">Anirban Banerjee</h3>
+                    <p class="resume__role">Frontend Developer → Backend / Full-Stack Developer</p>
+                    <p class="resume__summary">
+                        Passionate developer transitioning from frontend to full-stack, building real-world projects and
+                        continuously learning modern web technologies.
+                    </p>
+                    <a href="#" class="button resume__download" download>
+                        <i class="ri-download-line"></i>
+                        Download Resume
+                    </a>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="resume__section" data-reveal>
+                    <h4 class="resume__section-title">
+                        <i class="ri-code-s-slash-line"></i>
+                        Technical Skills
+                    </h4>
+                    <div class="resume__skills">
+                        <div class="resume__skill-category">
+                            <h5 class="resume__skill-title">Frontend</h5>
+                            <div class="resume__skill-items">
+                                <span class="resume__skill-tag">HTML</span>
+                                <span class="resume__skill-tag">CSS</span>
+                                <span class="resume__skill-tag">JavaScript</span>
+                                <span class="resume__skill-tag">React</span>
+                            </div>
+                        </div>
+
+                        <div class="resume__skill-category">
+                            <h5 class="resume__skill-title">Backend (In Progress)</h5>
+                            <div class="resume__skill-items">
+                                <span class="resume__skill-tag">Node.js</span>
+                                <span class="resume__skill-tag">Express.js</span>
+                                <span class="resume__skill-tag">REST APIs</span>
+                            </div>
+                        </div>
+
+                        <div class="resume__skill-category">
+                            <h5 class="resume__skill-title">Databases</h5>
+                            <div class="resume__skill-items">
+                                <span class="resume__skill-tag">MongoDB</span>
+                                <span class="resume__skill-tag">SQL/MySQL</span>
+                            </div>
+                        </div>
+
+                        <div class="resume__skill-category">
+                            <h5 class="resume__skill-title">Tools</h5>
+                            <div class="resume__skill-items">
+                                <span class="resume__skill-tag">Git</span>
+                                <span class="resume__skill-tag">GitHub</span>
+                                <span class="resume__skill-tag">Postman</span>
+                                <span class="resume__skill-tag">VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Section -->
+                <div class="resume__section" data-reveal>
+                    <h4 class="resume__section-title">
+                        <i class="ri-folder-line"></i>
+                        Key Projects
+                    </h4>
+                    <div class="resume__projects">
+                        <article class="resume__project">
+                            <div class="resume__project-header">
+                                <h5 class="resume__project-title">Student Management System</h5>
+                                <span class="resume__project-tech">React • Node.js • Express • MongoDB</span>
+                            </div>
+                            <p class="resume__project-description">
+                                Full-stack application to manage student data with CRUD operations
+                            </p>
+                            <ul class="resume__project-list">
+                                <li>Developed RESTful API with Express.js for student data management</li>
+                                <li>Implemented React frontend with responsive UI components</li>
+                                <li>Integrated MongoDB for data persistence and retrieval</li>
+                                <li>Added form validation and error handling</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <!-- <div class="resume__section">
+                    <h4 class="resume__section-title">
+                        <i class="ri-briefcase-line"></i>
+                        Experience
+                    </h4>
+                    <div class="resume__experience">
+                        <article class="resume__experience-item">
+                            <div class="resume__experience-header">
+                                <h5 class="resume__experience-title">Independent Developer</h5>
+                                <span class="resume__experience-date">2023 - Present</span>
+                            </div>
+                            <p class="resume__experience-description">
+                                Self-driven learning and project development focused on transitioning from frontend to
+                                full-stack development
+                            </p>
+                            <ul class="resume__experience-list">
+                                <li>Built multiple full-stack projects using MERN stack</li>
+                                <li>Continuously learning backend technologies and best practices</li>
+                                <li>Actively contributing to personal portfolio and open-source projects</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div> -->
+
+                <!-- Education Section -->
+                <div class="resume__section" data-reveal>
+                    <h4 class="resume__section-title">
+                        <i class="ri-graduation-cap-line"></i>
+                        Education
+                    </h4>
+                    <div class="resume__education">
+                        <article class="resume__education-item">
+                            <div class="resume__education-header">
+                                <h5 class="resume__education-degree">B.Tech in Computer Science</h5>
+                                <span class="resume__education-date">2021 - 2025</span>
+                            </div>
+                            <p class="resume__education-school">Narula Institute of Technology</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="resume__cta" data-reveal>
+                    <p class="resume__cta-text">
+                        Interested in my work? Check out my projects or download my resume to learn more about my skills
+                        and experience.
+                    </p>
+                    <div class="resume__cta-buttons">
+                        <a href="#projects" class="button">View Projects</a>
+                        <a href="#contact" class="button button__ghost">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== CONTACT ====================-->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact</h2>
 
+            <div class="contact__container container grid">
+                <div class="contact__info" data-reveal>
+                    <h3 class="contact__subtitle">Get In Touch</h3>
+                    <p class="contact__description">
+                        Have a question or want to work together? Feel free to reach out!
+                    </p>
+
+                    <div class="contact__data">
+                        <div class="contact__item">
+                            <i class="ri-mail-line contact__icon"></i>
+                            <div>
+                                <h4 class="contact__title">Email</h4>
+                                <span class="contact__text">anirbanbanerjee481@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <i class="ri-map-pin-line contact__icon"></i>
+                            <div>
+                                <h4 class="contact__title">Location</h4>
+                                <span class="contact__text">India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form" id="contact-form" data-reveal>
+                    <div class="contact__group">
+                        <input type="text" name="user_name" placeholder="Your Name" class="contact__input" required>
+                        <input type="email" name="user_email" placeholder="Your Email" class="contact__input" required>
+                    </div>
+                    <textarea name="user_message" placeholder="Your Message" class="contact__input contact__textarea"
+                        required></textarea>
+
+                    <p class="contact__message" id="contact-message"></p>
+
+                    <button type="submit" class="button contact__button">
+                        Send Message
+                        <i class="ri-send-plane-fill"></i>
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <h2 class="footer__title">Anirban Banerjee</h2>
+        <p class="footer__description">Frontend Developer | MERN Stack Learner | Passionate about building responsive
+            web
+            experiences.Exploring full-stack
+        </p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/anirban-banerjee-7a131224a/" target="_blank" class="footer__link">
+                <i class="ri-linkedin-box-fill"></i>
+            </a>
+
+            <a href="https://github.com/AnirbanBanerjee123" target="_blank" class="footer__link">
+                <i class="ri-github-fill"></i>
+            </a>
+
+            <a href="https://twitter.com/AnirbanBanerje123" target="_blank" class="footer__link">
+                <i class="ri-twitter-x-fill"></i>
+            </a>
+
+
+        </div>
+        <p class="footer__copy">&copy; 2025 Anirban Banerjee. All rights reserved.</p>
 
     </footer>
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-fill"></i>
+    </a>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
