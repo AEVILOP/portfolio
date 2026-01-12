@@ -7,6 +7,7 @@ const navMenu = document.getElementById('nav-menu'),
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
+        document.body.classList.add('menu-open')
     })
 }
 
@@ -14,6 +15,7 @@ if (navToggle) {
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
+        document.body.classList.remove('menu-open')
     })
 }
 
@@ -25,6 +27,7 @@ const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
+    document.body.classList.remove('menu-open')
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -121,10 +124,10 @@ const sendEmail = (e) => {
     // EmailJS service configuration
     // serviceID - templateID - #form - publicKey
     emailjs.sendForm(
-        'service_YOUR_SERVICE_ID',  // Replace with your EmailJS service ID
-        'template_YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_x7vj708',  // Replace with your EmailJS service ID
+        'template_9vimhri', // Replace with your EmailJS template ID
         '#contact-form',
-        'YOUR_PUBLIC_KEY'            // Replace with your EmailJS public key
+        'J2jJAEGq53Q0CgGBn'            // Replace with your EmailJS public key
     ).then(() => {
         // Show success message
         contactMessage.textContent = 'Message sent successfully! ✅';
