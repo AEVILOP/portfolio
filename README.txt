@@ -3,7 +3,7 @@
 A sleek, responsive personal portfolio website designed to showcase my projects, skills, and professional journey.
 
 ## 🚀 Demo
-You can view the live site here: [https://anirban-banerjee-portfolio.netlify.app/]
+You can view the live site here: LINK (https://anirban-banerjee-portfolio.netlify.app/)
 
 ## 🛠️ Tech Stack
 This portfolio is built using core web technologies to ensure performance and clean design:
