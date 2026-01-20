@@ -1,13 +1,39 @@
-# black #222831
+# Personal Portfolio
 
-# Grey  #393E46
+A sleek, responsive personal portfolio website designed to showcase my projects, skills, and professional journey.
 
-# Teal  #00ADB5
+## 🚀 Demo
+You can view the live site here: [Insert your live link here, e.g., GitHub Pages link]
 
-# white #EEEEEE
+## 🛠️ Tech Stack
+This portfolio is built using core web technologies to ensure performance and clean design:
+* **HTML5:** Semantic structure.
+* **CSS3:** Custom styling with a modern Teal & Dark Grey color palette.
+* **JavaScript:** Interactive elements and logic.
 
-Links
+## 🎨 Design Theme
+The project uses a professional color scheme:
+- **Primary (Black):** `#222831`
+- **Secondary (Grey):** `#393E46`
+- **Accent (Teal):** `#00ADB5`
+- **Text (White):** `#EEEEEE`
 
-linkedIn :https://www.linkedin.com/in/anirban-banerjee-7a131224a/
-X:https://x.com/Anirban4810
-gitHub : https://github.com/AEVILOP
+## 📂 Project Structure
+```text
+├── images/          # Assets and project screenshots
+├── js/              # JavaScript logic files
+├── style.css        # Main stylesheet
+├── index.html       # Landing page
+└── README.md        # Project documentation
+
+##🌐 Connect with Me
+
+'''Feel free to reach out or follow my work:
+
+LinkedIn: Anirban Banerjee
+
+X (Twitter): @Anirban4810
+
+GitHub: AEVILOP
+
+Created by Anirban Banerjee
