@@ -1,34 +1,55 @@
-# 🌟 Personal Portfolio 
+🚀 Portfolio Website
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/github/languages/top/AEVILOP/portfolio?style=for-the-badge&color=00ADB5" alt="Top Language">
-  <img src="https://img.shields.io/github/repo-size/AEVILOP/portfolio?style=for-the-badge" alt="Size">
-</p>
+A personal developer portfolio showcasing my projects, skills, and experience.
+Built to present my work clearly to recruiters and collaborators — not just to “look cool”.
 
----
+🔗 Live Demo: https://aevilop.github.io/portfolio/
 
-### 🚀 [Explore the Live Portfolio here!](https://anirban-banerjee-portfolio.netlify.app/)
+📂 Source Code: This repository
 
-A sleek, responsive personal portfolio website designed to showcase my projects, skills, and professional journey with a modern, high-contrast aesthetic.
+🧠 Why this project exists
 
-## 🛠️ Tech Stack
-| Category | Technology |
-| :--- | :--- |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) |
-| **Deployment** | ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) |
+Most portfolios are flashy but empty.
+This one is focused on clarity, performance, and real projects.
 
-## 🎨 Design Theme
-The project follows a "Midnight Teal" aesthetic for a premium developer feel:
-- **Primary (Black):** `#222831`
-- **Secondary (Grey):** `#393E46`
-- **Accent (Teal):** `#00ADB5`
-- **Text (White):** `#EEEEEE`
+The goal:
 
-## 📂 Project Structure
-```text
-├── images/          # Assets and project screenshots
-├── js/              # JavaScript logic files
-├── style.css        # Main stylesheet
-├── index.html       # Landing page
-└── README.md        # Project documentation
+Show what I can actually build
+
+Demonstrate frontend fundamentals
+
+Keep the UI clean, fast, and responsive
+
+If someone can’t understand my skills in under a minute, the portfolio has failed.
+
+✨ Features
+
+Responsive layout (works on mobile, tablet, desktop)
+
+Project showcase section with descriptions
+
+Skills & technology overview
+
+About section with professional focus
+
+Simple and clean UI (no unnecessary animations)
+
+Fast load time, minimal dependencies
+
+🛠 Tech Stack
+
+HTML5 – semantic structure
+
+CSS3 – layout, responsiveness, styling
+
+JavaScript (Vanilla) – interactivity & logic
+
+No frameworks here — this project proves I understand the basics properly, not just libraries.
+
+📬 Contact
+
+If you want to discuss work, collaboration, or opportunities:
+
+GitHub: https://github.com/AEVILOP
+
+Portfolio: https://aevilop.github.io/portfolio/
