@@ -18,10 +18,10 @@ body,
 
     /*========== Colors (YOUR PALETTE) ==========*/
     --black-color: #222831;
-    --body-color: #222831;
+    --body-color: #090909;
     --container-color: #222831;
 
-    --gray-color: #393E46;
+    --gray-color: #161e1f;
 
     --first-color: #00ADB5;
     --first-color-alt: #00979e;
@@ -286,9 +286,9 @@ img {
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
 
-    /* Hide theme toggle on mobile */
+    /* Show theme toggle on mobile */
     .nav__theme {
-        display: none;
+        display: flex;
     }
 
     /* Hide navigation menu by default on mobile */
@@ -516,6 +516,7 @@ body.menu-open {
     justify-content: center;
     gap: 1.5rem;
     z-index: 1;
+    order: -1;
 }
 
 .home__link {
@@ -642,7 +643,7 @@ body.menu-open {
 @media screen and (max-width: 540px) {
     .home__content {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
         padding-block: 2rem;
     }
 
@@ -656,8 +657,9 @@ body.menu-open {
         top: auto;
         order: -1;
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         gap: 1.5rem;
+        margin-top: 0;
     }
 
     .home__link {
