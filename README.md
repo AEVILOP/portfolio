@@ -2,12 +2,12 @@
 
 A clean, responsive personal portfolio built using **HTML, CSS, and Vanilla JavaScript** to showcase my projects, skills, and professional focus.
 
-🔗 **Live Demo:** https://aevilop.github.io/portfolio/  
+🔗 [![Live Demo](https://aevilop.github.io/portfolio/ )
 📂 **Source Code:** This repository
 
 ---
 
-## 📌 About The Project
+##  📌 About The Project
 
 This project is my **personal developer portfolio**.  
 Its purpose is simple: clearly present who I am, what I build, and what I know — without unnecessary clutter or overengineering.
