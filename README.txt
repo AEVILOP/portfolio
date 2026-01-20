@@ -3,7 +3,7 @@
 A sleek, responsive personal portfolio website designed to showcase my projects, skills, and professional journey.
 
 ## 🚀 Demo
-You can view the live site here: [Insert your live link here, e.g., GitHub Pages link]
+You can view the live site here: [https://anirban-banerjee-portfolio.netlify.app/]
 
 ## 🛠️ Tech Stack
 This portfolio is built using core web technologies to ensure performance and clean design:
@@ -30,10 +30,10 @@ The project uses a professional color scheme:
 
 '''Feel free to reach out or follow my work:
 
-LinkedIn: Anirban Banerjee
+LinkedIn: Anirban Banerjee()
 
-X (Twitter): @Anirban4810
+X (Twitter): @Anirban4810()
 
-GitHub: AEVILOP
+GitHub: AEVILOP()
 
-Created by Anirban Banerjee
+Created by Anirban Banerjee 
