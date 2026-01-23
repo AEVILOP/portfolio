@@ -11,6 +11,9 @@
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
+    <!--=============== TAILWIND CSS ===============-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="style.css">
 
@@ -143,34 +146,85 @@
                             <span>Skills</span>
                         </h3>
 
-                        <div class="about__items">
-                            <div class="about__item">
-                                <i class="ri-html5-fill"></i>
-                                <span>HTML</span>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
+                            <div
+                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
+                                <i
+                                    class="ri-html5-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                                <span
+                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">HTML</span>
                             </div>
-                            <div class="about__item">
-                                <i class="ri-css3-fill"></i>
-                                <span>CSS</span>
+                            <div
+                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
+                                <i
+                                    class="ri-css3-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                                <span
+                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">CSS</span>
                             </div>
-                            <div class="about__item">
-                                <i class="ri-javascript-fill"></i>
-                                <span>JavaScript</span>
+                            <div
+                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
+                                <i
+                                    class="ri-javascript-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                                <span
+                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">JavaScript</span>
                             </div>
-                            <div class="about__item">
-                                <i class="ri-reactjs-fill"></i>
-                                <span>React</span>
+                            <div
+                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
+                                <i
+                                    class="ri-reactjs-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                                <span
+                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">React</span>
                             </div>
-                            <div class="about__item">
-                                <i class="ri-bootstrap-fill"></i>
-                                <span>Bootstrap</span>
+                            <div
+                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
+                                <i
+                                    class="ri-bootstrap-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                                <span
+                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">Bootstrap</span>
                             </div>
-                            <div class="about__item">
-                                <i class="ri-git-branch-fill"></i>
-                                <span>Git</span>
+                            <div
+                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
+                                <i
+                                    class="ri-git-branch-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                                <span
+                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">Git</span>
                             </div>
-                            <div class="about__item">
-                                <i class="ri-github-fill"></i>
-                                <span>GitHub</span>
+                            <div
+                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
+                                <i
+                                    class="ri-github-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
+                                <span
+                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">GitHub</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
+                                <svg class="w-8 h-8 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"
+                                    viewBox="0 0 54 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_2)">
+                                        <path
+                                            d="M27 0C12.087 0 0 12.087 0 27C0 41.913 12.087 54 27 54C41.913 54 54 41.913 54 27C54 12.087 41.913 0 27 0Z"
+                                            fill="url(#paint0_linear_1_2)" />
+                                        <path
+                                            d="M13.5 19.5C11.295 19.5 9.75 21.045 9.75 23.25C9.75 25.455 11.295 27 13.5 27H27C29.205 27 30.75 25.455 30.75 23.25C30.75 21.045 29.205 19.5 27 19.5H13.5Z"
+                                            fill="white" />
+                                        <path
+                                            d="M27 27C24.795 27 23.25 28.545 23.25 30.75C23.25 32.955 24.795 34.5 27 34.5H40.5C42.705 34.5 44.25 32.955 44.25 30.75C44.25 28.545 42.705 27 40.5 27H27Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1_2" x1="0" y1="0" x2="54" y2="54"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#06B6D4" />
+                                            <stop offset="1" stop-color="#0891B2" />
+                                        </linearGradient>
+                                        <clipPath id="clip0_1_2">
+                                            <rect width="54" height="54" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span
+                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">Tailwind
+                                    CSS</span>
                             </div>
                         </div>
                     </div>
@@ -293,6 +347,34 @@
                         </div>
                     </div>
                 </article>
+                <!-- Project Card 5 -->
+                <article class="projects__card" data-reveal>
+                    <div class="projects__image">
+                        <img src="images/PixVerse_Image_Effect_prompt_to do app.jpg" alt="project"
+                            class="projects__img">
+                        <div class="projects__overlay">
+                            <div class="projects__content">
+                                <h3 class="projects__title">Task - Start your Day</h3>
+                                <p class="projects__description">task management application</p>
+                                <div class="projects__tags">
+                                    <span class="projects__tag">React</span>
+                                    <span class="projects__tag">Tailwind CSS</span>
+                                    <span class="projects__tag">JavaScript</span>
+                                </div>
+                                <div class="projects__buttons">
+                                    <a href="https://abstodoapp.netlify.app/" class="projects__button" target="_blank">
+                                        <i class="ri-eye-line"></i> Live Demo
+                                    </a>
+                                    <a href="https://github.com/AEVILOP/ABs-ToDo-APP" class="projects__button"
+                                        target="_blank">
+                                        <i class="ri-github-line"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
 
