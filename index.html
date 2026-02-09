@@ -51,11 +51,8 @@
 
             </div>
 
-            <!-- Actions (Theme toggle and Menu toggle) -->
+            <!-- Actions (Menu toggle only) -->
             <div class="nav__actions">
-                <div class="nav__theme" id="theme-button">
-                    <i class="ri-moon-line"></i>
-                </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-line"></i>
                 </div>
@@ -87,7 +84,9 @@
                         </a>
                     </div>
 
-                    <div class="home__image"></div>
+                    <div class="home__image">
+                        <img src="images/IMG_20251001_235337.jpg" alt="Anirban Banerjee" class="home__img">
+                    </div>
 
                     <div class="home__data grid" data-reveal>
                         <p class="home__subtitle">
@@ -124,7 +123,9 @@
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
             <div class="about__container container grid">
-                <div class="about__image" data-reveal></div>
+                <div class="about__image" data-reveal>
+                    <img src="images/hero-img.jpg" alt="About Anirban" class="about__img">
+                </div>
                 <div class="about__content" data-reveal>
                     <div class="about__data">
                         <h2 class="section__title">About Me</h2>
@@ -146,85 +147,67 @@
                             <span>Skills</span>
                         </h3>
 
-                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
-                            <div
-                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
-                                <i
-                                    class="ri-html5-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
-                                <span
-                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">HTML</span>
+                        <div class="skills__grid">
+                            <div class="skill__card" data-reveal>
+                                <div class="skill__icon-wrapper">
+                                    <i class="ri-html5-fill"></i>
+                                </div>
+                                <span class="skill__name">HTML</span>
+                                <div class="skill__glow"></div>
                             </div>
-                            <div
-                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
-                                <i
-                                    class="ri-css3-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
-                                <span
-                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">CSS</span>
+                            <div class="skill__card" data-reveal>
+                                <div class="skill__icon-wrapper">
+                                    <i class="ri-css3-fill"></i>
+                                </div>
+                                <span class="skill__name">CSS</span>
+                                <div class="skill__glow"></div>
                             </div>
-                            <div
-                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
-                                <i
-                                    class="ri-javascript-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
-                                <span
-                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">JavaScript</span>
+                            <div class="skill__card" data-reveal>
+                                <div class="skill__icon-wrapper">
+                                    <i class="ri-javascript-fill"></i>
+                                </div>
+                                <span class="skill__name">JavaScript</span>
+                                <div class="skill__glow"></div>
                             </div>
-                            <div
-                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
-                                <i
-                                    class="ri-reactjs-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
-                                <span
-                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">React</span>
+                            <div class="skill__card" data-reveal>
+                                <div class="skill__icon-wrapper">
+                                    <i class="ri-reactjs-fill"></i>
+                                </div>
+                                <span class="skill__name">React</span>
+                                <div class="skill__glow"></div>
                             </div>
-                            <div
-                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
-                                <i
-                                    class="ri-bootstrap-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
-                                <span
-                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">Bootstrap</span>
+                            <div class="skill__card" data-reveal>
+                                <div class="skill__icon-wrapper">
+                                    <i class="ri-bootstrap-fill"></i>
+                                </div>
+                                <span class="skill__name">Bootstrap</span>
+                                <div class="skill__glow"></div>
                             </div>
-                            <div
-                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
-                                <i
-                                    class="ri-git-branch-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
-                                <span
-                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">Git</span>
+                            <div class="skill__card" data-reveal>
+                                <div class="skill__icon-wrapper">
+                                    <i class="ri-git-branch-fill"></i>
+                                </div>
+                                <span class="skill__name">Git</span>
+                                <div class="skill__glow"></div>
                             </div>
-                            <div
-                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
-                                <i
-                                    class="ri-github-fill text-3xl text-cyan-400 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"></i>
-                                <span
-                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">GitHub</span>
+                            <div class="skill__card" data-reveal>
+                                <div class="skill__icon-wrapper">
+                                    <i class="ri-github-fill"></i>
+                                </div>
+                                <span class="skill__name">GitHub</span>
+                                <div class="skill__glow"></div>
                             </div>
-                            <div
-                                class="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg border-2 border-gray-700 hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group cursor-default">
-                                <svg class="w-8 h-8 group-hover:scale-125 group-hover:-translate-y-1 transition-transform duration-300"
-                                    viewBox="0 0 54 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1_2)">
+                            <div class="skill__card" data-reveal>
+                                <div class="skill__icon-wrapper">
+                                    <svg class="skill__svg" viewBox="0 0 54 54" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path
-                                            d="M27 0C12.087 0 0 12.087 0 27C0 41.913 12.087 54 27 54C41.913 54 54 41.913 54 27C54 12.087 41.913 0 27 0Z"
-                                            fill="url(#paint0_linear_1_2)" />
-                                        <path
-                                            d="M13.5 19.5C11.295 19.5 9.75 21.045 9.75 23.25C9.75 25.455 11.295 27 13.5 27H27C29.205 27 30.75 25.455 30.75 23.25C30.75 21.045 29.205 19.5 27 19.5H13.5Z"
-                                            fill="white" />
-                                        <path
-                                            d="M27 27C24.795 27 23.25 28.545 23.25 30.75C23.25 32.955 24.795 34.5 27 34.5H40.5C42.705 34.5 44.25 32.955 44.25 30.75C44.25 28.545 42.705 27 40.5 27H27Z"
-                                            fill="white" />
-                                    </g>
-                                    <defs>
-                                        <linearGradient id="paint0_linear_1_2" x1="0" y1="0" x2="54" y2="54"
-                                            gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#06B6D4" />
-                                            <stop offset="1" stop-color="#0891B2" />
-                                        </linearGradient>
-                                        <clipPath id="clip0_1_2">
-                                            <rect width="54" height="54" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <span
-                                    class="text-sm font-medium text-white mt-2 group-hover:text-cyan-400 transition-colors duration-300">Tailwind
-                                    CSS</span>
+                                            d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 33.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+                                            fill="#06B6D4" />
+                                    </svg>
+                                </div>
+                                <span class="skill__name">Tailwind CSS</span>
+                                <div class="skill__glow"></div>
                             </div>
                         </div>
                     </div>

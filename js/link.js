@@ -61,42 +61,16 @@ window.addEventListener("scroll", shadowHeader);
 
 
 
-/*=============== THEME TOGGLE ===============*/
-const themeButton = document.getElementById('theme-button');
+/*=============== THEME TOGGLE - REMOVED ===============*/
+// Theme toggle functionality has been removed
+
+/*=============== SCROLL UP BUTTON ===============*/
 const scrollUpButton = document.getElementById('scroll-up');
-const body = document.body;
 
-// Function to toggle theme
-const toggleTheme = () => {
-    body.classList.toggle('light-theme');
-
-    // Update theme button icon
-    if (body.classList.contains('light-theme')) {
-        themeButton.innerHTML = '<i class="ri-sun-line"></i>';
-        localStorage.setItem('selected-theme', 'light');
-    } else {
-        themeButton.innerHTML = '<i class="ri-moon-line"></i>';
-        localStorage.setItem('selected-theme', 'dark');
-    }
-};
-
-// Check for saved theme preference
-const savedTheme = localStorage.getItem('selected-theme');
-if (savedTheme === 'light') {
-    body.classList.add('light-theme');
-    themeButton.innerHTML = '<i class="ri-sun-line"></i>';
-}
-
-// Theme button click event
-if (themeButton) {
-    themeButton.addEventListener('click', toggleTheme);
-}
-
-// Scroll-up button click event (also toggles theme)
+// Scroll-up button click event (only scrolls to top, no theme change)
 if (scrollUpButton) {
     scrollUpButton.addEventListener('click', (e) => {
         e.preventDefault();
-        toggleTheme();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
